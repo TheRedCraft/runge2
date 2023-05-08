@@ -1,1 +1,37 @@
-@import "_preset";
+body {
+	background-color: rgba($color: #eeeeee, $alpha: 1);
+}
+.menu_slider {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba($color: #ffffff, $alpha: 1);
+	border-radius: 15px;
+	width: auto;
+	height: 3rem;
+}
+
+.buttons > .button {
+	width: 5rem;
+	height: 2.5rem;
+	border-radius: 10px;
+	margin: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buttons > .button > .but {
+	text-decoration: none;
+}
+
+.buttons > .button:hover {
+	font-weight: bold;
+	border: 1px solid #b8b8b8;
+	background-color: rgba($color: #ebebeb, $alpha: 1);
+}

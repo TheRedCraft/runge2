@@ -1,0 +1,40 @@
+body {
+  background-color: #eeeeee;
+}
+
+.menu_slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  width: auto;
+  height: 3rem;
+}
+
+.buttons > .button {
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons > .button > .but {
+  text-decoration: none;
+}
+
+.buttons > .button:hover {
+  font-weight: bold;
+  border: 1px solid #b8b8b8;
+  background-color: #ebebeb;
+}/*# sourceMappingURL=style.css.map */
