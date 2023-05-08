@@ -1,13 +1,19 @@
 body {
 	background-color: rgba($color: #eeeeee, $alpha: 1);
+	overflow: hidden;
 }
 .menu_slider {
+	visibility: hidden;
+	position: absolute;
+	top: -6rem;
+	transition: 250ms;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .buttons {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -25,6 +31,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 2;
 }
 .buttons > .button > .but {
 	text-decoration: none;
@@ -32,6 +39,16 @@ body {
 
 .buttons > .button:hover {
 	font-weight: bold;
+}
+
+.slider {
+	transition: 250ms;
+	left: 1rem;
+	border-radius: 10px;
+	height: 2.5rem;
+	width: 5rem;
+	position: absolute;
 	border: 1px solid #b8b8b8;
 	background-color: rgba($color: #ebebeb, $alpha: 1);
+	z-index: 1;
 }
