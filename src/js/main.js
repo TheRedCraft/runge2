@@ -1,5 +1,5 @@
 let html_cotact = `
-<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; width: 100%; background-color: black;">
+<div style="position: absolute; top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; width: 100%; background-color: black;">
 <input
 	style="width: 60%; margin: 1rem; height: 5rem; border-radius: 15px; padding: 5px; background-color: #353535; border: none; color: #c2c2c2"
 	placeholder="Name"
@@ -26,6 +26,7 @@ setInterval(function () {
 
 setInterval(function () {
 	if(document.querySelector('.Contact-container').innerHTML == "") {
-		document.querySelector('body').innerHTML = html_cotact;
+		document.querySelector('.framer-13hlmmu').innerHTML = html_cotact;
+		document.querySelector('.Contact-container').innerHTML = " "
 	}
 }, 1000);
