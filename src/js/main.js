@@ -1,4 +1,4 @@
-let darkmode = false
+let darkmode = false;
 let html_cotact = `
 	<div style="position: absolute; top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; width: 100%;">
 	<input
@@ -26,8 +26,8 @@ setInterval(function () {
 }, 1000);
 
 setInterval(function () {
-	if(document.querySelector('.Contact-container').innerHTML == "") {
+	if (document.querySelector('.Contact-container').innerHTML == '') {
 		document.querySelector('.framer-13hlmmu').innerHTML = html_cotact;
-		document.querySelector('.Contact-container').innerHTML = " "
+		document.querySelector('.Contact-container').innerHTML = ' ';
 	}
 }, 1000);
